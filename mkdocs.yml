@@ -1,3 +1,30 @@
 site_name: Algebra
+site_description: A 
+site_author: Jackson Mooring
+strict: true
+dev_addr: 'localhost:3000'
+repo_url: https://github.com/Verassitnh/algebra
+repo_name: Verassitnh/algebra
+markdown_extensions:
+  - meta
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
 theme:
+  features:
+    - instant
   name: material
+  font:
+    text: 'Josefin Sans'
+    code: Share Tech Mono
+  palette:
+    scheme: slate
+    primary: red
+    accent: red
